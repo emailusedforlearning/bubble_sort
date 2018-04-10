@@ -2,11 +2,12 @@
 def sorted?(array)
 	array.each_with_index do |value, index|
 		if (index < (array.length - 1)) && (array[index] > array[index + 1])
-			return false 
+			return false
 		end
 	end
 	true
 end
+
 
 def bubble_sort(array)
 	sorted_array = array
